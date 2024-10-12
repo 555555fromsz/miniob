@@ -75,6 +75,11 @@ struct ConditionSqlNode
   Value          right_value;    ///< right-hand side value if right_is_attr = FALSE
 };
 
+struct FromSqlNode
+{
+  std::vector<std::string>                 relations;    ///< 查询的表
+  std::vector<ConditionSqlNode>            join_conditions;///< join
+};
 /**
  * @brief 描述一个select语句
  * @ingroup SQLParser
@@ -89,7 +94,7 @@ struct ConditionSqlNode
 struct SelectSqlNode
 {
   std::vector<std::unique_ptr<Expression>> expressions;  ///< 查询的表达式
-  std::vector<std::string>                 relations;    ///< 查询的表
+  FromSqlNode                              from_and_join_condition;///< from
   std::vector<ConditionSqlNode>            conditions;   ///< 查询条件，使用AND串联起来多个条件
   std::vector<std::unique_ptr<Expression>> group_by;     ///< group by clause
 };

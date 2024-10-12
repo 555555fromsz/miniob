@@ -105,6 +105,8 @@ UnboundAggregateExpr *create_aggregate_expression(const char *aggregate_name,
         AND
         SET
         ON
+        INNER
+        JOIN
         LOAD
         DATA
         INFILE
@@ -132,7 +134,7 @@ UnboundAggregateExpr *create_aggregate_expression(const char *aggregate_name,
   std::vector<Value> *                       value_list;
   std::vector<ConditionSqlNode> *            condition_list;
   std::vector<RelAttrSqlNode> *              rel_attr_list;
-  std::vector<std::string> *                 relation_list;
+  FromSqlNode *                              relation_list;
   char *                                     string;
   int                                        number;
   float                                      floats;
@@ -463,7 +465,7 @@ select_stmt:        /*  select 语句的语法解析树*/
       }
 
       if ($4 != nullptr) {
-        $$->selection.relations.swap(*$4);
+        $$->selection.from_and_join_condition=(*$4);
         delete $4;
       }
 
@@ -578,19 +580,75 @@ relation:
     ;
 rel_list:
     relation {
-      $$ = new std::vector<std::string>();
-      $$->push_back($1);
+      $$ = new FromSqlNode;
+      $$->relations.push_back($1);
       free($1);
     }
     | relation COMMA rel_list {
       if ($3 != nullptr) {
         $$ = $3;
       } else {
-        $$ = new std::vector<std::string>;
+        $$ = new FromSqlNode;
       }
 
-      $$->insert($$->begin(), $1);
+      $$->relations.insert($$->relations.begin(), $1);
       free($1);
+    }
+    | relation INNER JOIN rel_list ON condition_list {
+      if ($4 != nullptr) {
+        $$ = $4;
+      } else {
+        $$ = new FromSqlNode;
+      }
+
+      $$->relations.insert($$->relations.begin(), $1);
+      if ($6 != nullptr) {
+        $$->join_conditions.swap(*$6);
+        delete $6;
+      }
+      free($1);
+    }
+    | rel_list INNER JOIN relation ON condition_list {
+      if ($1 != nullptr) {
+        $$ = $1;
+      } else {
+        $$ = new FromSqlNode;
+      }
+
+      $$->relations.insert($$->relations.begin(), $4);
+      if ($6 != nullptr) {
+        $$->join_conditions.swap(*$6);
+        delete $6;
+      }
+      free($4);
+    }
+    | relation INNER JOIN LBRACE rel_list RBRACE ON condition_list {
+      if ($5 != nullptr) {
+        $$ = $5;
+      } else {
+        $$ = new FromSqlNode;
+      }
+
+      $$->relations.insert($$->relations.begin(), $1);
+      if ($8 != nullptr) {
+        $$->join_conditions.swap(*$8);
+        delete $8;
+      }
+      free($1);
+    }
+    | LBRACE rel_list RBRACE INNER JOIN relation ON condition_list {
+      if ($2 != nullptr) {
+        $$ = $2;
+      } else {
+        $$ = new FromSqlNode;
+      }
+
+      $$->relations.insert($$->relations.begin(), $6);
+      if ($8 != nullptr) {
+        $$->join_conditions.swap(*$8);
+        delete $8;
+      }
+      free($6);
     }
     ;
 

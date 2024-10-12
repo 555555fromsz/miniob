@@ -43,8 +43,8 @@ RC SelectStmt::create(Db *db, SelectSqlNode &select_sql, Stmt *&stmt)
   // collect tables in `from` statement
   vector<Table *>                tables;
   unordered_map<string, Table *> table_map;
-  for (size_t i = 0; i < select_sql.relations.size(); i++) {
-    const char *table_name = select_sql.relations[i].c_str();
+  for (size_t i = 0; i < select_sql.from_and_join_condition.relations.size(); i++) {
+    const char *table_name = select_sql.from_and_join_condition.relations[i].c_str();
     if (nullptr == table_name) {
       LOG_WARN("invalid argument. relation name is null. index=%d", i);
       return RC::INVALID_ARGUMENT;
@@ -86,7 +86,10 @@ RC SelectStmt::create(Db *db, SelectSqlNode &select_sql, Stmt *&stmt)
   if (tables.size() == 1) {
     default_table = tables[0];
   }
-
+  
+  select_sql.conditions.insert(select_sql.conditions.end(),select_sql.from_and_join_condition.join_conditions.begin(),
+  select_sql.from_and_join_condition.join_conditions.end());
+  
   // create filter statement in `where` statement
   FilterStmt *filter_stmt = nullptr;
   RC          rc          = FilterStmt::create(db,
