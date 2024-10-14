@@ -1,0 +1,541 @@
+[2024-10-12 22:36:45.486446 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: init@init.cpp:200] >> Output configuration 
+Begin dump configuration
+[]
+
+Finish dump configuration 
+
+[2024-10-12 22:36:45.486729 pid:6676 tid:7ffff7e9e7c0 ctx:0 WARN: create_db@default_handler.cpp:93] >> Db already exists: sys
+[2024-10-12 22:36:45.487100 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.h:244] >> Extend one pool, this->size:128, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.487347 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.h:244] >> Extend one pool, this->size:256, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.487601 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.h:244] >> Extend one pool, this->size:384, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.487851 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.h:244] >> Extend one pool, this->size:512, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.488155 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.h:244] >> Extend one pool, this->size:640, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.488434 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.h:244] >> Extend one pool, this->size:768, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.488680 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.h:244] >> Extend one pool, this->size:896, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.488922 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.h:244] >> Extend one pool, this->size:1024, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.489201 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.h:244] >> Extend one pool, this->size:1152, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.489483 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.h:244] >> Extend one pool, this->size:1280, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.489792 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.h:244] >> Extend one pool, this->size:1408, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.490041 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.h:244] >> Extend one pool, this->size:1536, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.490358 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.h:244] >> Extend one pool, this->size:1664, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.490626 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.h:244] >> Extend one pool, this->size:1792, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.490879 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.h:244] >> Extend one pool, this->size:1920, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.491122 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.h:244] >> Extend one pool, this->size:2048, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.491378 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.h:244] >> Extend one pool, this->size:2176, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.491630 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.h:244] >> Extend one pool, this->size:2304, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.491877 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.h:244] >> Extend one pool, this->size:2432, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.492118 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.h:244] >> Extend one pool, this->size:2560, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.492173 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: init@mem_pool.h:191] >> Extend one pool, this->size:2560, item_num_per_pool:128, this->name:BufPool.
+[2024-10-12 22:36:45.492182 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: BufferPoolManager@disk_buffer_pool.cpp:776] >> buffer pool manager init with memory size 20971520, page num: 2560, pool num: 20
+[2024-10-12 22:36:45.492985 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: load_pages@double_write_buffer.cpp:290] >> double write buffer load pages done. page num=2
+[2024-10-12 22:36:45.493336 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: init_meta@db.cpp:359] >> Successfully read db meta file. db=sys, file=miniob/db/sys/sys.db, check_point_lsn=0
+[2024-10-12 22:36:45.494297 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: init@field_meta.cpp:57] >> Init a field with name=id
+[2024-10-12 22:36:45.494342 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: init@field_meta.cpp:57] >> Init a field with name=t_name
+[2024-10-12 22:36:45.494441 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: init@field_meta.cpp:57] >> Init a field with name=col1
+[2024-10-12 22:36:45.494580 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: init@field_meta.cpp:57] >> Init a field with name=col2
+[2024-10-12 22:36:45.494702 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: open_file@disk_buffer_pool.cpp:234] >> Successfully open buffer pool file miniob/db/sys/Update_table_1.data.
+[2024-10-12 22:36:45.494985 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: open_file@disk_buffer_pool.cpp:272] >> Successfully open miniob/db/sys/Update_table_1.data. file_desc=5, hdr_frame=0x7ffff6efa808, file header=pageCount:1, allocatedCount:1
+[2024-10-12 22:36:45.495083 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: init_free_pages@record_manager.cpp:539] >> record file handler init free pages done. free page num=0, rc=SUCCESS
+[2024-10-12 22:36:45.495133 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: init@record_manager.cpp:498] >> open record file handle done. rc=SUCCESS
+[2024-10-12 22:36:45.495219 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: open_file@disk_buffer_pool.cpp:234] >> Successfully open buffer pool file miniob/db/sys/Update_table_1-index_id.index.
+[2024-10-12 22:36:45.495589 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: open_file@disk_buffer_pool.cpp:272] >> Successfully open miniob/db/sys/Update_table_1-index_id.index. file_desc=6, hdr_frame=0x7ffff6efc898, file header=pageCount:2, allocatedCount:2
+[2024-10-12 22:36:45.495800 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: extend@mem_pool.cpp:96] >> Extend one pool, this->size:128, item_size:12, item_num_per_pool:128, this->name:b+tree.
+[2024-10-12 22:36:45.495901 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: init@mem_pool.cpp:42] >> Extend one pool, this->size:128, item_size:12, item_num_per_pool:128, this->name:b+tree.
+[2024-10-12 22:36:45.495986 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: open@bplus_tree.cpp:964] >> Successfully open index
+[2024-10-12 22:36:45.496576 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: open@bplus_tree.cpp:925] >> open b+tree success. filename=miniob/db/sys/Update_table_1-index_id.index
+[2024-10-12 22:36:45.496593 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: open@bplus_tree_index.cpp:67] >> Successfully open index, file_name:miniob/db/sys/Update_table_1-index_id.index, index:index_id, field:id
+[2024-10-12 22:36:45.496632 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: open_all_tables@db.cpp:239] >> Open table: Update_table_1, file: Update_table_1.table
+[2024-10-12 22:36:45.496640 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: open_all_tables@db.cpp:242] >> All table have been opened. num=1
+[2024-10-12 22:36:46.021632 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: recover@db.cpp:323] >> Successfully recover db. db=sys checkpoint_lsn=0
+[2024-10-12 22:36:46.021732 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: init@default_handler.cpp:69] >> Default handler init with miniob success
+[2024-10-12 22:36:46.021758 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: init@init.cpp:215] >> Successfully init utility
+[2024-10-12 22:36:46.021863 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: start_tcp_server@server.cpp:194] >> Listen on port 6789
+[2024-10-12 22:36:46.021883 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: start_tcp_server@server.cpp:197] >> Observer start success
+[2024-10-12 22:36:50.176365 pid:6676 tid:7ffff7e9e7c0 ctx:0 INFO: accept@server.cpp:129] >> Accepted connection from 127.0.0.1:28352
+
+[2024-10-12 22:36:50.178020 pid:6676 tid:7ffff2400640 ctx:0 INFO: operator()@one_thread_per_connection_thread_handler.cpp:70] >> worker thread start. communicator = 0x60b000000880
+[2024-10-12 22:36:56.506753 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=13): show tables
+
+[2024-10-12 22:36:56.507225 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:37:15.118413 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=30): select * from Update_table_1
+
+[2024-10-12 22:37:15.118785 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:37:27.359749 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:37:49.767398 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=23): create table t(a int)
+
+[2024-10-12 22:37:49.767665 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: create@table.cpp:68] >> Begin to create table miniob/db/sys:t
+[2024-10-12 22:37:49.767723 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: init@field_meta.cpp:57] >> Init a field with name=a
+[2024-10-12 22:37:49.767729 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: init@table_meta.cpp:97] >> Sussessfully initialized table meta. table id=1, name=t
+[2024-10-12 22:37:49.768138 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: create_file@disk_buffer_pool.cpp:838] >> Successfully create miniob/db/sys/t.data.
+[2024-10-12 22:37:49.768184 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: open_file@disk_buffer_pool.cpp:234] >> Successfully open buffer pool file miniob/db/sys/t.data.
+[2024-10-12 22:37:49.768249 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: open_file@disk_buffer_pool.cpp:272] >> Successfully open miniob/db/sys/t.data. file_desc=9, hdr_frame=0x7ffff6f009b8, file header=pageCount:1, allocatedCount:1
+[2024-10-12 22:37:49.768304 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: init_free_pages@record_manager.cpp:539] >> record file handler init free pages done. free page num=0, rc=SUCCESS
+[2024-10-12 22:37:49.768317 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: init@record_manager.cpp:498] >> open record file handle done. rc=SUCCESS
+[2024-10-12 22:37:49.768325 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: create@table.cpp:127] >> Successfully create table miniob/db/sys:t
+[2024-10-12 22:37:49.768340 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: create_table@db.cpp:160] >> Create table success. table name=t, table_id:1
+[2024-10-12 22:37:49.768406 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: sync@table.cpp:588] >> Sync table over. table=t
+[2024-10-12 22:37:49.768414 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: sync@db.cpp:266] >> Successfully sync table db:sys, table:t.
+[2024-10-12 22:37:49.768544 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: sync@table.cpp:588] >> Sync table over. table=Update_table_1
+[2024-10-12 22:37:49.768551 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: sync@db.cpp:266] >> Successfully sync table db:sys, table:Update_table_1.
+[2024-10-12 22:37:49.771740 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: sync@db.cpp:271] >> double write buffer flush pages ret=SUCCESS
+[2024-10-12 22:37:49.771930 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: flush_meta@db.cpp:404] >> Successfully write db meta file. db=sys, file=miniob/db/sys/sys.db.tmp, check_point_lsn=0
+[2024-10-12 22:37:49.771962 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: sync@db.cpp:290] >> Successfully sync db. db=sys
+[2024-10-12 22:37:49.771982 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: execute@command_executor.cpp:102] >> sync db after ddl. rc=0
+[2024-10-12 22:37:49.772075 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:38:04.085598 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=25): insert into t values(1)
+
+[2024-10-12 22:38:04.085806 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:38:04.085880 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: allocate_page@disk_buffer_pool.cpp:409] >> allocate new page. file=miniob/db/sys/t.data, pageNum=1, pin=1
+[2024-10-12 22:38:04.086084 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:38:14.511393 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=25): insert into t values(2)
+
+[2024-10-12 22:38:14.511590 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:38:14.512044 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:38:21.251835 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=25): insert into t values(3)
+
+[2024-10-12 22:38:21.251997 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:38:21.252146 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:38:25.375601 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=25): insert into t values(4)
+
+[2024-10-12 22:38:25.375782 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:38:25.375872 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:38:32.902841 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=17): select * from t
+
+[2024-10-12 22:38:32.903085 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:38:56.883700 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:23.770223 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=52): create table join_table_large_1(id int, num1 int);
+
+[2024-10-12 22:39:23.770505 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: create@table.cpp:68] >> Begin to create table miniob/db/sys:join_table_large_1
+[2024-10-12 22:39:23.770816 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: init@field_meta.cpp:57] >> Init a field with name=id
+[2024-10-12 22:39:23.770851 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: init@field_meta.cpp:57] >> Init a field with name=num1
+[2024-10-12 22:39:23.770871 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: init@table_meta.cpp:97] >> Sussessfully initialized table meta. table id=2, name=join_table_large_1
+[2024-10-12 22:39:23.771328 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: create_file@disk_buffer_pool.cpp:838] >> Successfully create miniob/db/sys/join_table_large_1.data.
+[2024-10-12 22:39:23.771393 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: open_file@disk_buffer_pool.cpp:234] >> Successfully open buffer pool file miniob/db/sys/join_table_large_1.data.
+[2024-10-12 22:39:23.771441 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: open_file@disk_buffer_pool.cpp:272] >> Successfully open miniob/db/sys/join_table_large_1.data. file_desc=11, hdr_frame=0x7ffff6f04ad8, file header=pageCount:1, allocatedCount:1
+[2024-10-12 22:39:23.771489 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: init_free_pages@record_manager.cpp:539] >> record file handler init free pages done. free page num=0, rc=SUCCESS
+[2024-10-12 22:39:23.771510 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: init@record_manager.cpp:498] >> open record file handle done. rc=SUCCESS
+[2024-10-12 22:39:23.771529 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: create@table.cpp:127] >> Successfully create table miniob/db/sys:join_table_large_1
+[2024-10-12 22:39:23.771547 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: create_table@db.cpp:160] >> Create table success. table name=join_table_large_1, table_id:2
+[2024-10-12 22:39:23.771628 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: sync@table.cpp:588] >> Sync table over. table=join_table_large_1
+[2024-10-12 22:39:23.771646 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: sync@db.cpp:266] >> Successfully sync table db:sys, table:join_table_large_1.
+[2024-10-12 22:39:23.771710 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: sync@table.cpp:588] >> Sync table over. table=t
+[2024-10-12 22:39:23.771726 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: sync@db.cpp:266] >> Successfully sync table db:sys, table:t.
+[2024-10-12 22:39:23.771839 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: sync@table.cpp:588] >> Sync table over. table=Update_table_1
+[2024-10-12 22:39:23.771856 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: sync@db.cpp:266] >> Successfully sync table db:sys, table:Update_table_1.
+[2024-10-12 22:39:23.772993 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: sync@db.cpp:271] >> double write buffer flush pages ret=SUCCESS
+[2024-10-12 22:39:23.773159 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: flush_meta@db.cpp:404] >> Successfully write db meta file. db=sys, file=miniob/db/sys/sys.db.tmp, check_point_lsn=0
+[2024-10-12 22:39:23.773189 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: sync@db.cpp:290] >> Successfully sync db. db=sys
+[2024-10-12 22:39:23.773233 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: execute@command_executor.cpp:102] >> sync db after ddl. rc=0
+[2024-10-12 22:39:23.773313 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.195327 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=46): insert into join_table_large_1 values(1, 1);
+
+[2024-10-12 22:39:33.195547 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.195712 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: allocate_page@disk_buffer_pool.cpp:409] >> allocate new page. file=miniob/db/sys/join_table_large_1.data, pageNum=1, pin=1
+[2024-10-12 22:39:33.195897 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.201172 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=46): insert into join_table_large_1 values(2, 2);
+
+[2024-10-12 22:39:33.201407 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.201586 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.206610 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=46): insert into join_table_large_1 values(3, 3);
+
+[2024-10-12 22:39:33.206833 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.206980 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.212699 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=46): insert into join_table_large_1 values(4, 4);
+
+[2024-10-12 22:39:33.212871 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.212977 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.217896 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=46): insert into join_table_large_1 values(5, 5);
+
+[2024-10-12 22:39:33.218058 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.218174 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.223101 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=46): insert into join_table_large_1 values(6, 6);
+
+[2024-10-12 22:39:33.223247 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.223331 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.228738 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=46): insert into join_table_large_1 values(7, 7);
+
+[2024-10-12 22:39:33.228876 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.228957 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.233892 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=46): insert into join_table_large_1 values(8, 8);
+
+[2024-10-12 22:39:33.234073 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.234190 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.243659 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=46): insert into join_table_large_1 values(9, 9);
+
+[2024-10-12 22:39:33.243847 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.243976 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.246500 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(10, 10);
+
+[2024-10-12 22:39:33.246687 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.246805 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.247059 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(11, 11);
+
+[2024-10-12 22:39:33.247244 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.247386 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.251009 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(12, 12);
+
+[2024-10-12 22:39:33.251396 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.252505 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.256614 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(13, 13);
+
+[2024-10-12 22:39:33.256841 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.256997 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.261254 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(14, 14);
+
+[2024-10-12 22:39:33.261425 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.261536 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.270439 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(15, 15);
+
+[2024-10-12 22:39:33.270636 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.270750 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.278527 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(16, 16);
+
+[2024-10-12 22:39:33.278752 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.278914 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.283693 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(17, 17);
+
+[2024-10-12 22:39:33.283858 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.283950 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.289262 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(18, 18);
+
+[2024-10-12 22:39:33.289454 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.289567 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.294670 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(19, 19);
+
+[2024-10-12 22:39:33.294818 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.294911 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.299851 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(20, 20);
+
+[2024-10-12 22:39:33.300011 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.300139 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.305950 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(21, 21);
+
+[2024-10-12 22:39:33.306164 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.306317 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.311413 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(22, 22);
+
+[2024-10-12 22:39:33.311552 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.311632 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.316990 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(23, 23);
+
+[2024-10-12 22:39:33.317160 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.317249 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.322026 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(24, 24);
+
+[2024-10-12 22:39:33.322223 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.322335 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.327581 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(25, 25);
+
+[2024-10-12 22:39:33.327717 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.327806 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.333221 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(26, 26);
+
+[2024-10-12 22:39:33.333373 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.333458 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.339683 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(27, 27);
+
+[2024-10-12 22:39:33.339864 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.339973 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.340151 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(28, 28);
+
+[2024-10-12 22:39:33.340264 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.340337 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.345247 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(29, 29);
+
+[2024-10-12 22:39:33.345360 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.345435 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.351085 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(30, 30);
+
+[2024-10-12 22:39:33.351224 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.351301 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.355908 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(31, 31);
+
+[2024-10-12 22:39:33.356135 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.356253 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.361489 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(32, 32);
+
+[2024-10-12 22:39:33.361620 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.361701 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.366898 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(33, 33);
+
+[2024-10-12 22:39:33.367025 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.367137 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.372078 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(34, 34);
+
+[2024-10-12 22:39:33.372269 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.372379 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.377176 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(35, 35);
+
+[2024-10-12 22:39:33.377317 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.377408 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.381619 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(36, 36);
+
+[2024-10-12 22:39:33.381776 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.381878 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.387340 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(37, 37);
+
+[2024-10-12 22:39:33.387510 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.387624 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.393482 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(38, 38);
+
+[2024-10-12 22:39:33.393619 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.393714 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.399175 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(39, 39);
+
+[2024-10-12 22:39:33.399328 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.399421 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.403613 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(40, 40);
+
+[2024-10-12 22:39:33.403783 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.403898 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.409277 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(41, 41);
+
+[2024-10-12 22:39:33.409419 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.409521 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.415352 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(42, 42);
+
+[2024-10-12 22:39:33.415504 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.415589 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.421496 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(43, 43);
+
+[2024-10-12 22:39:33.421677 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.421782 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.421854 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(44, 44);
+
+[2024-10-12 22:39:33.421911 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.421979 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.426690 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(45, 45);
+
+[2024-10-12 22:39:33.426876 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.427004 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.431642 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(46, 46);
+
+[2024-10-12 22:39:33.431765 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.431851 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.437345 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(47, 47);
+
+[2024-10-12 22:39:33.437511 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.437626 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.443328 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(48, 48);
+
+[2024-10-12 22:39:33.443474 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.443570 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.449235 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(49, 49);
+
+[2024-10-12 22:39:33.449377 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.449466 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.454510 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(50, 50);
+
+[2024-10-12 22:39:33.454751 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.454858 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.459612 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(51, 51);
+
+[2024-10-12 22:39:33.459748 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.459843 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.464806 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(52, 52);
+
+[2024-10-12 22:39:33.464936 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.465034 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.469942 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(53, 53);
+
+[2024-10-12 22:39:33.470185 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.470342 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.474932 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(54, 54);
+
+[2024-10-12 22:39:33.475094 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.475201 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.480457 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(55, 55);
+
+[2024-10-12 22:39:33.480580 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.480682 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.486032 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(56, 56);
+
+[2024-10-12 22:39:33.486229 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.486350 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.491596 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(57, 57);
+
+[2024-10-12 22:39:33.491751 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.491858 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.496794 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(58, 58);
+
+[2024-10-12 22:39:33.496928 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.497043 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.501566 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(59, 59);
+
+[2024-10-12 22:39:33.501728 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.501821 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.506665 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(60, 60);
+
+[2024-10-12 22:39:33.506827 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.506928 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.507028 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(61, 61);
+
+[2024-10-12 22:39:33.507184 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.507266 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.512159 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(62, 62);
+
+[2024-10-12 22:39:33.512270 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.512351 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.517867 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(63, 63);
+
+[2024-10-12 22:39:33.518112 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.518344 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.523252 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(64, 64);
+
+[2024-10-12 22:39:33.523425 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.523523 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.529674 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(65, 65);
+
+[2024-10-12 22:39:33.529799 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.529896 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.534810 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(66, 66);
+
+[2024-10-12 22:39:33.534955 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.535064 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.540872 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(67, 67);
+
+[2024-10-12 22:39:33.541028 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.541139 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.545871 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(68, 68);
+
+[2024-10-12 22:39:33.546005 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.546098 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.551549 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(69, 69);
+
+[2024-10-12 22:39:33.551690 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.551774 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.556574 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(70, 70);
+
+[2024-10-12 22:39:33.556746 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.556875 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.561523 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(71, 71);
+
+[2024-10-12 22:39:33.561674 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.561773 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.566516 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(72, 72);
+
+[2024-10-12 22:39:33.566706 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.566827 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.572236 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(73, 73);
+
+[2024-10-12 22:39:33.572409 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.572517 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.577039 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(74, 74);
+
+[2024-10-12 22:39:33.577203 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.577312 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.582500 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(75, 75);
+
+[2024-10-12 22:39:33.582633 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.582731 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.588131 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(76, 76);
+
+[2024-10-12 22:39:33.588303 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.588407 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.593695 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(77, 77);
+
+[2024-10-12 22:39:33.593840 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.593941 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.594124 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(78, 78);
+
+[2024-10-12 22:39:33.594207 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.594274 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.599200 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(79, 79);
+
+[2024-10-12 22:39:33.599291 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.599366 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.605567 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(80, 80);
+
+[2024-10-12 22:39:33.605764 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.605875 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.610553 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(81, 81);
+
+[2024-10-12 22:39:33.610685 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.610778 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.616543 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(82, 82);
+
+[2024-10-12 22:39:33.616710 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.616816 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.621612 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(83, 83);
+
+[2024-10-12 22:39:33.621772 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.621877 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.626565 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(84, 84);
+
+[2024-10-12 22:39:33.626725 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.626835 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.631542 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(85, 85);
+
+[2024-10-12 22:39:33.631665 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.631758 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.637134 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(86, 86);
+
+[2024-10-12 22:39:33.637309 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.637408 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.642984 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(87, 87);
+
+[2024-10-12 22:39:33.643181 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.643299 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.647958 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(88, 88);
+
+[2024-10-12 22:39:33.648117 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.648401 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.653196 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(89, 89);
+
+[2024-10-12 22:39:33.653407 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.653519 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.659229 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(90, 90);
+
+[2024-10-12 22:39:33.659403 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.659509 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.665190 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(91, 91);
+
+[2024-10-12 22:39:33.665330 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.665422 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.671418 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(92, 92);
+
+[2024-10-12 22:39:33.671598 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.671723 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.676971 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(93, 93);
+
+[2024-10-12 22:39:33.677140 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.677233 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.677386 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(94, 94);
+
+[2024-10-12 22:39:33.677469 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.677531 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.682372 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(95, 95);
+
+[2024-10-12 22:39:33.682472 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.682571 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.688647 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(96, 96);
+
+[2024-10-12 22:39:33.688872 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.688986 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.693905 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(97, 97);
+
+[2024-10-12 22:39:33.694021 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.694269 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.699032 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(98, 98);
+
+[2024-10-12 22:39:33.699168 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.699265 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:33.703842 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=48): insert into join_table_large_1 values(99, 99);
+
+[2024-10-12 22:39:33.704106 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:33.704313 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:34.802138 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=50): insert into join_table_large_1 values(100, 100);
+
+[2024-10-12 22:39:34.802306 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:39:34.802410 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:39:59.814014 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=34): select * from join_table_large_1
+
+[2024-10-12 22:39:59.814297 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: generate_physical_plan@optimize_stage.cpp:85] >> use tuple iterator
+[2024-10-12 22:40:02.619927 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:58:33.888612 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:89] >> receive command(size=5): exi
+
+[2024-10-12 22:58:33.888795 pid:6676 tid:7ffff2400640 ctx:603000020ef0 INFO: handle_event@sql_task_handler.cpp:45] >> write result return SUCCESS
+[2024-10-12 22:58:37.600105 pid:6676 tid:7ffff2400640 ctx:0 INFO: read_event@plain_communicator.cpp:82] >> The peer has been closed 127.0.0.1:28352
+[2024-10-12 22:58:37.600194 pid:6676 tid:7ffff2400640 ctx:0 ERROR: operator()@one_thread_per_connection_thread_handler.cpp:98] >> handle error. rc = IOERR_CLOSE
+[2024-10-12 22:58:37.600202 pid:6676 tid:7ffff2400640 ctx:0 INFO: operator()@one_thread_per_connection_thread_handler.cpp:103] >> worker thread stop. communicator = 0x60b000000880
+[2024-10-12 22:58:37.600323 pid:6676 tid:7ffff2400640 ctx:0 INFO: close_connection@one_thread_per_connection_thread_handler.cpp:154] >> close connection. communicator = 0x60b000000880

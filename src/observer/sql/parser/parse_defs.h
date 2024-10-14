@@ -17,9 +17,9 @@ See the Mulan PSL v2 for more details. */
 #include <string>
 #include <vector>
 #include <memory>
-
+#include <unordered_map>
 #include "common/value.h"
-
+using namespace std;
 class Expression;
 
 /**
@@ -75,10 +75,12 @@ struct ConditionSqlNode
   Value          right_value;    ///< right-hand side value if right_is_attr = FALSE
 };
 
+
 struct FromSqlNode
 {
   std::vector<std::string>                 relations;    ///< 查询的表
-  std::vector<ConditionSqlNode>            join_conditions;///< join
+  std::string                              relation_name;  ///< 查询的表
+  std::unordered_map<std::string,std::vector<ConditionSqlNode>>  inner_join_cell;///< join
 };
 /**
  * @brief 描述一个select语句

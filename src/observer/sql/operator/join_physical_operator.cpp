@@ -13,8 +13,13 @@ See the Mulan PSL v2 for more details. */
 //
 
 #include "sql/operator/join_physical_operator.h"
+#include "join_physical_operator.h"
 
-NestedLoopJoinPhysicalOperator::NestedLoopJoinPhysicalOperator() {}
+NestedLoopJoinPhysicalOperator::NestedLoopJoinPhysicalOperator(std::unique_ptr<Expression> expr) : expression_(std::move(expr))
+{
+  ASSERT(expression_->value_type() == AttrType::BOOLEANS, "predicate's expression should be BOOLEAN type");
+}
+
 
 RC NestedLoopJoinPhysicalOperator::open(Trx *trx)
 {
@@ -34,8 +39,8 @@ RC NestedLoopJoinPhysicalOperator::open(Trx *trx)
   return rc;
 }
 
-RC NestedLoopJoinPhysicalOperator::next()
-{
+RC NestedLoopJoinPhysicalOperator::next_t() 
+{ 
   bool left_need_step = (left_tuple_ == nullptr);
   RC   rc             = RC::SUCCESS;
   if (round_done_) {
@@ -61,6 +66,30 @@ RC NestedLoopJoinPhysicalOperator::next()
   }
 
   rc = right_next();
+  return rc;
+}
+RC NestedLoopJoinPhysicalOperator::next()
+{
+  RC                rc   = RC::SUCCESS;
+
+  while (RC::SUCCESS == (rc = this->next_t())) {
+    Tuple *tuple = this->current_tuple();
+    if (nullptr == tuple) {
+      rc = RC::INTERNAL;
+      LOG_WARN("failed to get tuple from operator");
+      break;
+    }
+
+    Value value;
+    rc = expression_->get_value(*tuple, value);
+    if (rc != RC::SUCCESS) {
+      return rc;
+    }
+
+    if (value.get_boolean()) {
+      return rc;
+    }
+  }
   return rc;
 }
 

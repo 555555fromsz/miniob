@@ -582,6 +582,7 @@ rel_list:
     relation {
       $$ = new FromSqlNode;
       $$->relations.push_back($1);
+      $$->relation_name=$1;
       free($1);
     }
     | relation COMMA rel_list {
@@ -594,64 +595,21 @@ rel_list:
       $$->relations.insert($$->relations.begin(), $1);
       free($1);
     }
-    | relation INNER JOIN rel_list ON condition_list {
-      if ($4 != nullptr) {
-        $$ = $4;
-      } else {
-        $$ = new FromSqlNode;
-      }
-
-      $$->relations.insert($$->relations.begin(), $1);
-      if ($6 != nullptr) {
-        $$->join_conditions.swap(*$6);
-        delete $6;
-      }
-      free($1);
-    }
     | rel_list INNER JOIN relation ON condition_list {
       if ($1 != nullptr) {
         $$ = $1;
       } else {
         $$ = new FromSqlNode;
       }
-
-      $$->relations.insert($$->relations.begin(), $4);
+      
       if ($6 != nullptr) {
-        $$->join_conditions.swap(*$6);
+        $$->inner_join_cell.insert({$4,(*$6)});
         delete $6;
-      }
+      } 
+      $$->relations.insert($$->relations.begin(), $4);
       free($4);
     }
-    | relation INNER JOIN LBRACE rel_list RBRACE ON condition_list {
-      if ($5 != nullptr) {
-        $$ = $5;
-      } else {
-        $$ = new FromSqlNode;
-      }
-
-      $$->relations.insert($$->relations.begin(), $1);
-      if ($8 != nullptr) {
-        $$->join_conditions.swap(*$8);
-        delete $8;
-      }
-      free($1);
-    }
-    | LBRACE rel_list RBRACE INNER JOIN relation ON condition_list {
-      if ($2 != nullptr) {
-        $$ = $2;
-      } else {
-        $$ = new FromSqlNode;
-      }
-
-      $$->relations.insert($$->relations.begin(), $6);
-      if ($8 != nullptr) {
-        $$->join_conditions.swap(*$8);
-        delete $8;
-      }
-      free($6);
-    }
     ;
-
 where:
     /* empty */
     {

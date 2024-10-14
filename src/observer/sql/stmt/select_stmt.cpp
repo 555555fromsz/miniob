@@ -60,7 +60,31 @@ RC SelectStmt::create(Db *db, SelectSqlNode &select_sql, Stmt *&stmt)
     tables.push_back(table);
     table_map.insert({table_name, table});
   }
+  
+  std::vector<FilterStmt *>                join_on;
+  for (auto it : select_sql.from_and_join_condition.inner_join_cell) {
+    //string t_name = select_sql.from_and_join_condition.relations[i];
+    Table *d_table = nullptr;
 
+    pair<string,vector<ConditionSqlNode>> a=it;
+    d_table=table_map.find(a.first)->second;
+
+    a.first=a.first;//table name
+    a.second=a.second;//on conditions
+    
+    FilterStmt *f_stmt = nullptr;
+    RC          rc          = FilterStmt::create(db,
+      d_table,
+      &table_map,
+      a.second.data(),
+      static_cast<int>(a.second.size()),
+      f_stmt);
+    if (rc != RC::SUCCESS) {
+      LOG_WARN("cannot construct filter stmt");
+      return rc;
+    }
+    join_on.push_back(f_stmt);
+  }
   // collect query fields in `select` statement
   vector<unique_ptr<Expression>> bound_expressions;
   ExpressionBinder expression_binder(binder_context);
@@ -87,9 +111,9 @@ RC SelectStmt::create(Db *db, SelectSqlNode &select_sql, Stmt *&stmt)
     default_table = tables[0];
   }
   
-  select_sql.conditions.insert(select_sql.conditions.end(),select_sql.from_and_join_condition.join_conditions.begin(),
-  select_sql.from_and_join_condition.join_conditions.end());
-  
+  //select_sql.conditions.insert(select_sql.conditions.end(),select_sql.from_and_join_condition.join_conditions.begin(),
+  //select_sql.from_and_join_condition.join_conditions.end());
+
   // create filter statement in `where` statement
   FilterStmt *filter_stmt = nullptr;
   RC          rc          = FilterStmt::create(db,
@@ -108,6 +132,7 @@ RC SelectStmt::create(Db *db, SelectSqlNode &select_sql, Stmt *&stmt)
 
   select_stmt->tables_.swap(tables);
   select_stmt->query_expressions_.swap(bound_expressions);
+  select_stmt->join_on_.swap(join_on);
   select_stmt->filter_stmt_ = filter_stmt;
   select_stmt->group_by_.swap(group_by_expressions);
   stmt                      = select_stmt;
