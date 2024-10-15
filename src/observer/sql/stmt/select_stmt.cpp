@@ -39,7 +39,7 @@ RC SelectStmt::create(Db *db, SelectSqlNode &select_sql, Stmt *&stmt)
   }
 
   BinderContext binder_context;
-
+  BinderContext binder_context1;
   // collect tables in `from` statement
   vector<Table *>                tables;
   unordered_map<string, Table *> table_map;
@@ -84,6 +84,19 @@ RC SelectStmt::create(Db *db, SelectSqlNode &select_sql, Stmt *&stmt)
     }
     join_on.push_back(f_stmt);
   }
+  
+  if(join_on.size()>0){
+    int len=select_sql.from_and_join_condition.relations.size();
+    for (int i = len-1; i >= 0; i--) {
+      const char *table_name = select_sql.from_and_join_condition.relations[i].c_str();
+
+      Table *table = db->find_table(table_name);
+
+      binder_context1.add_table(table);
+    }
+    binder_context=binder_context1;
+  }
+
   // collect query fields in `select` statement
   vector<unique_ptr<Expression>> bound_expressions;
   ExpressionBinder expression_binder(binder_context);
