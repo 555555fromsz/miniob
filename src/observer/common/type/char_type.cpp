@@ -45,6 +45,25 @@ RC CharType::cast_to(const Value &val, AttrType type, Value &result) const
       }
       result.set_date(year,month,day);
     }break;
+    case AttrType::INTS:
+    {
+      result.attr_type_=AttrType::INTS;
+      int num;
+      if(sscanf(val.value_.pointer_value_,"%d",&num)!=1){
+        LOG_WARN("invalid int format: %s",val.value_.pointer_value_);
+        return RC::INVALID_ARGUMENT;    
+      }
+      result.set_int(num);
+    }
+    case AttrType::FLOATS:{
+      result.attr_type_=AttrType::FLOATS;
+      float num;
+      if(sscanf(val.value_.pointer_value_,"%f",&num)!=1){
+        LOG_WARN("invalid float format: %s",val.value_.pointer_value_);
+        return RC::INVALID_ARGUMENT;    
+      }
+      result.set_float(num);
+    }
     default: return RC::UNIMPLEMENTED;
   }
   return RC::SUCCESS;
@@ -56,6 +75,12 @@ int CharType::cast_cost(AttrType type)
     return 0;
   }
   if (type == AttrType::DATES) {
+    return 1;
+  }
+  if (type == AttrType::INTS) {
+    return 1;
+  }
+  if (type == AttrType::FLOATS) {
     return 1;
   }
   return INT32_MAX;

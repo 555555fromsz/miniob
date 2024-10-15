@@ -37,7 +37,7 @@ create table join_table_large_4(id int, num4 int);
 create table join_table_large_5(id int, num5 int);
 create table join_table_large_6(id int, num6 int);
 
-insert into join_table_large_1 values(1, 1);
+insert into join_table_large_1 values(1, 1);////
 insert into join_table_large_1 values(2, 2);
 insert into join_table_large_1 values(3, 3);
 insert into join_table_large_1 values(4, 4);
