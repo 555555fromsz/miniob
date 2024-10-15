@@ -71,7 +71,6 @@ RC SelectStmt::create(Db *db, SelectSqlNode &select_sql, Stmt *&stmt)
 
     a.first=a.first;//table name
     a.second=a.second;//on conditions
-    
     FilterStmt *f_stmt = nullptr;
     RC          rc          = FilterStmt::create(db,
       d_table,

@@ -54,7 +54,7 @@ RC CharType::cast_to(const Value &val, AttrType type, Value &result) const
         return RC::INVALID_ARGUMENT;    
       }
       result.set_int(num);
-    }
+    }break;
     case AttrType::FLOATS:{
       result.attr_type_=AttrType::FLOATS;
       float num;
@@ -62,8 +62,9 @@ RC CharType::cast_to(const Value &val, AttrType type, Value &result) const
         LOG_WARN("invalid float format: %s",val.value_.pointer_value_);
         return RC::INVALID_ARGUMENT;    
       }
+      num=float(num);
       result.set_float(num);
-    }
+    }break;
     default: return RC::UNIMPLEMENTED;
   }
   return RC::SUCCESS;
@@ -78,10 +79,10 @@ int CharType::cast_cost(AttrType type)
     return 1;
   }
   if (type == AttrType::INTS) {
-    return 1;
+    return 0;
   }
   if (type == AttrType::FLOATS) {
-    return 1;
+    return 0;
   }
   return INT32_MAX;
 }

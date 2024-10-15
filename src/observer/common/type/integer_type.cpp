@@ -67,10 +67,10 @@ RC IntegerType::cast_to(const Value &val, AttrType type, Value &result) const
 int IntegerType::cast_cost(AttrType type)
 { 
   if (type == AttrType::FLOATS) {
-    return 1;
+    return 0;
   }
   if (type == AttrType::CHARS) {
-    return 0;
+    return 1;
   }
   return INT32_MAX;
 }
