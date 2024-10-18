@@ -248,6 +248,8 @@ string Value::to_string() const
 
 int Value::compare(const Value &other) const { return DataType::type_instance(this->attr_type_)->compare(*this, other); }
 
+int Value::compare_like(const Value &other) const { return DataType::type_instance(this->attr_type_)->compare_like(*this, other); }
+
 int Value::get_int() const
 {
   switch (attr_type_) {
