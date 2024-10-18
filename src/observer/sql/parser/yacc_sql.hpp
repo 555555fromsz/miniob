@@ -92,28 +92,30 @@ extern int yydebug;
     VALUES = 293,                  /* VALUES  */
     FROM = 294,                    /* FROM  */
     WHERE = 295,                   /* WHERE  */
-    AND = 296,                     /* AND  */
-    SET = 297,                     /* SET  */
-    ON = 298,                      /* ON  */
-    INNER = 299,                   /* INNER  */
-    JOIN = 300,                    /* JOIN  */
-    LOAD = 301,                    /* LOAD  */
-    DATA = 302,                    /* DATA  */
-    INFILE = 303,                  /* INFILE  */
-    EXPLAIN = 304,                 /* EXPLAIN  */
-    STORAGE = 305,                 /* STORAGE  */
-    FORMAT = 306,                  /* FORMAT  */
-    EQ = 307,                      /* EQ  */
-    LT = 308,                      /* LT  */
-    GT = 309,                      /* GT  */
-    LE = 310,                      /* LE  */
-    GE = 311,                      /* GE  */
-    NE = 312,                      /* NE  */
-    NUMBER = 313,                  /* NUMBER  */
-    FLOAT = 314,                   /* FLOAT  */
-    ID = 315,                      /* ID  */
-    SSS = 316,                     /* SSS  */
-    UMINUS = 317                   /* UMINUS  */
+    NT = 296,                      /* NT  */
+    LK = 297,                      /* LK  */
+    AND = 298,                     /* AND  */
+    SET = 299,                     /* SET  */
+    ON = 300,                      /* ON  */
+    INNER = 301,                   /* INNER  */
+    JOIN = 302,                    /* JOIN  */
+    LOAD = 303,                    /* LOAD  */
+    DATA = 304,                    /* DATA  */
+    INFILE = 305,                  /* INFILE  */
+    EXPLAIN = 306,                 /* EXPLAIN  */
+    STORAGE = 307,                 /* STORAGE  */
+    FORMAT = 308,                  /* FORMAT  */
+    EQ = 309,                      /* EQ  */
+    LT = 310,                      /* LT  */
+    GT = 311,                      /* GT  */
+    LE = 312,                      /* LE  */
+    GE = 313,                      /* GE  */
+    NE = 314,                      /* NE  */
+    NUMBER = 315,                  /* NUMBER  */
+    FLOAT = 316,                   /* FLOAT  */
+    ID = 317,                      /* ID  */
+    SSS = 318,                     /* SSS  */
+    UMINUS = 319                   /* UMINUS  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
@@ -122,7 +124,7 @@ extern int yydebug;
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 union YYSTYPE
 {
-#line 124 "yacc_sql.y"
+#line 126 "yacc_sql.y"
 
   ParsedSqlNode *                            sql_node;
   ConditionSqlNode *                         condition;
@@ -141,7 +143,7 @@ union YYSTYPE
   int                                        number;
   float                                      floats;
 
-#line 145 "yacc_sql.hpp"
+#line 147 "yacc_sql.hpp"
 
 };
 typedef union YYSTYPE YYSTYPE;

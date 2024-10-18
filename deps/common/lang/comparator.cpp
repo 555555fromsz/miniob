@@ -14,8 +14,11 @@ See the Mulan PSL v2 for more details. */
 
 #include "common/defs.h"
 #include <string.h>
+#include <string>
+#include <regex>
 
 #include "common/lang/algorithm.h"
+using namespace std;
 
 namespace common {
 
@@ -64,6 +67,28 @@ int compare_string(void *arg1, int arg1_max_length, void *arg2, int arg2_max_len
     return -1;
   }
   return 0;
+}
+
+int compare_string_like(void *arg1, int arg1_max_length, void *arg2, int arg2_max_length)
+{
+  //1 success,0 failed
+  const char *s1     = (const char *)arg1;
+  const char *s2     = (const char *)arg2;
+  string s="";
+	for(int i=0;i<arg2_max_length;i++){
+		if(s2[i]=='%'){
+			s+="(.*)";
+			continue;
+		}
+		if(s2[i]=='_'){
+			s+=".";
+			continue;
+		}
+		s+=s2[i];
+	}
+	if(regex_match(s1,regex(s)))
+		return 1;
+	return 0;
 }
 
 }  // namespace common
